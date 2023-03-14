@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Thank you for your donation!</h1>
+  <p>You have donated ${{ amount }} to {{ campaign.title }}.</p>
+  <p>The current amount raised is ${{ campaign.current_amount }}.</p>
+{% endblock %}

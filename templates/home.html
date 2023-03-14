@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wezesha</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #3F51B5;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        #nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #nav a:hover {
+            color: #8e44ad;
+        }
+
+        #content {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Wezesha</h1>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="{% url 'user_login' %}">Login</a></li>
+            <li><a href="{% url 'create_campaign' %}">Create a Campaign</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>About Wezesha</h2>
+        <p>Wezesha is dedicated to helping those in need by providing food, shelter, and education to those who are less fortunate. We believe that every person deserves a chance to live a fulfilling life, regardless of their circumstances.</p>
+
+        <h2>How You Can Help</h2>
+        <p>There are many ways you can help our charity, such as:</p>
+        <ul>
+            <li>Donating money</li>
+            <li>Volunteering your time</li>
+            <li>Donating food, clothing, or other goods</li>
+        </ul>
+        <p>No matter how you choose to help, your contribution can make a big difference in the lives of those in need.</p>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2023 Wezesha. All rights reserved.</p>
+    </div>
+</body>
+</html>

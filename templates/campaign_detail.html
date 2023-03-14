@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ campaign.title }}</h1>
+  <p>{{ campaign.description }}</p>
+  <p>Goal amount: ${{ campaign.goal_amount }}</p>
+  <p>Current amount: ${{ campaign.current_amount }}</p>
+  <p>End date: {{ campaign.end_date }}</p>
+  <a href="{% url 'make_donation' campaign.pk %}">Make a donation</a>
+{% endblock %}
